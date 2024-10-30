@@ -2,7 +2,8 @@
 <html lang = "en">
    <head>
       <meta charset = "UTF-8">
-      <meta http-equiv = "Permissions-Policy" content = "interest-cohort=()">
+      <meta http-equiv = "Permissions-Policy" 
+	    content = "interest-cohort=()">
       <meta name = "author"  content = "Irfan Surdar">
       <meta name    = "description"		
             content = "Tiny Text Processing Utilitie to 
@@ -26,37 +27,39 @@
              (Beta: Underdevelopment
           </h1>
        </header>
-		<article>
-			<textarea id = "Unprocessed" tabindex = "1" 
-								autofocus = "autofocus"></textarea>
+       <main>
+	  <article>
+	    <textarea id = "Unprocessed" tabindex = "1" 
+		      autofocus = "autofocus"></textarea>
 		
          <!-- 
                Extensible HTML: menu and menuitems 
                Use querySelector to get the menu and then attach event handlers.                 
          -->
-			<menu role = "button" tabindex = "2">
-				<p>Options</p>
-				<menuitems>
-					<button id = "PDFText" role = "menuitem">
-                  Markup For PDF
-               </button>
-					<button id = "RemoveJS"	role = "menuitem"	
-               		  data-unprefixed = "false">
-                  Remove JS
-               </button>
-					<button id = "PurgeHTMLDocument"		
-							  role = "menuitem" data-unprefixed = "false">
-                  Purge HTML Document
-               </button>
-               <button id = "BlogrollItem"		
-                       role = "menuitem">
-                  Markup Blogroll Item
-               </button>
-				</menuitems>
-			</menu>
-		</article>
-		<div id = "PageCover">
-			<textarea id = "ProcessedOutput" ></textarea>
-		</div>
-	</body>
+	    <menu role = "button" tabindex = "2">
+	       <p>Options</p>
+		  <menuitems>
+		     <button id = "PDFText" role = "menuitem">
+                        Markup For PDF
+                     </button>
+		     <button id = "RemoveJS"	role = "menuitem"	
+               		     data-unprefixed = "false">
+                        Remove JS
+                     </button>
+		     <button id = "PurgeHTMLDocument"		
+			     role = "menuitem" data-unprefixed = "false">
+                        Purge HTML Document
+                     </button>
+                     <button id = "BlogrollItem"		
+                             role = "menuitem">
+                        Markup Blogroll Item
+                     </button>
+		  </menuitems>
+		</menu>
+	     </article>
+	     <div id = "PageCover">
+		<textarea id = "ProcessedOutput" ></textarea>
+	     </div>
+       </main>
+   </body>
 </html>	
